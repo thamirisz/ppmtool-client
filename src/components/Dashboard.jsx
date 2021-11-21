@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import CreateProjectButton from "./project/CreateProjectButton";
 import ProjectItem from "./project/ProjectItem";
 
 const Dashboard = () => {
@@ -8,7 +9,7 @@ const Dashboard = () => {
       <Row>
         <Col>
           <h1 className="display-4 text-center mt-4">Projects</h1>
-          <Button className="mt-2">Create a Project</Button>
+          <CreateProjectButton />
           <hr />
           <ProjectItem />
         </Col>
